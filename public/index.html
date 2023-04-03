@@ -6,15 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../public/css/tailwind.css">
     <title>Tailwind</title>
 </head>
 <body>
-    <p class="font-Montserrat text-xl">Hola Tailwind</p>
-    <nav class="w-auto h-20 bg-primary">
     
-    </nav>
+    <nav></nav>
+    <div id="tab_bar"></div>
+    <section class="w-full h-screen">
+        <div class="" id="home">
+            <div class="w-full h-3/4">
+                <div class="w-full h-full flex flex-col absolute space-y-80 py-4 items-center">
+                    <input class="outline-none p-3 rounded-full shadow-sm" placeholder="San Francisco" type="search">
+                    <button class="w-44 rounded-full text-xl text-primary font-semibold p-4 bg-white shadow-sm">
+                        Explora mas
+                    </button>
+                </div>
+                <div class="w-full h-full">
+                    <img src="./img/sanFrancisco.jpg" alt="Puente San Francisco California">
+                </div>
+                
+            </div>
+        </div>
+        <div class="flex justify-center pt-20" id="recomendadas">
+            <div class="w-52 h-64 shadow-2xl rounded-lg">
+                <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover"></div>
+                <div class="w-full h-2/5 bg-secondary px-4 pt-4 rounded-b-lg">
+                    <p class="text-white font-bold text-xl">Norwey</p>
+                    <p class="text-white text-base">Beautiful Landscapes</p>
+                </div>
+            </div>
+        </div>
+        <div class="" id="rentas_destacadas"></div>
+    </section>
+
+    <footer></footer>
 
 
 </body>
