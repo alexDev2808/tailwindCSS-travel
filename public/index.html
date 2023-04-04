@@ -19,13 +19,13 @@
                 <div class="w-full h-full flex flex-col absolute space-y-64 items-center lg:space-y-4 lg:items-start lg:px-28 lg:justify-center">
                     <input class="outline-none p-3 mt-6 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12 lg:hidden" placeholder="San Francisco" type="search">
                     <div class="hidden h-auto lg:w-2/5 lg:flex">
-                        <p class="text-4xl text-white font-bold">Encuentra mas ubicaciones como esta</p>
+                        <p class="text-4xl text-black font-bold">Encuentra mas ubicaciones como esta</p>
                     </div>
                     <button class="w-44 rounded-full text-xl text-primary font-semibold p-4 bg-white shadow-sm transition-all duration-500 ease-in-out hover:bg-primary hover:text-white hover:-translate-y-1 hover:scale-110">
                         Explora mas
                     </button>
                 </div>
-                <div class="w-full h-full lg:h-96 lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center">
+                <div class="w-full h-full max-h-screen lg:h-96 lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center overflow-hidden">
                     <img class="lg:hidden" src="./img/sanFrancisco.jpg" alt="Puente San Francisco California">
                 </div>
                 
@@ -78,31 +78,52 @@
                         <p class="Card--info__subtitle">A breathe</p>
                     </div>
                 </div>
+                <div class="Card">
+                    <div class="Card--cover bg-norway"></div>
+                    <div class="Card--info">
+                        <p class="Card--info__title">Norway</p>
+                        <p class="Card--info__subtitle">Beautiful Landscapes</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="Card--cover bg-new_york"></div>
+                    <div class="Card--info">
+                        <p class="Card--info__title">New York</p>
+                        <p class="Card--info__subtitle">Beautiful Buildings</p>
+                    </div>
+                </div>
+                
             </div>
         </div>
 
         <div class="px-6 h-auto w-full" id="rentas_destacadas">
             <p class="text-3xl text-primary font-semibold pb-8">Rentas destacadas</p>
-            <div class="w-full h-full flex flex-col space-y-8 justify-center items-center">
-                <div class="w-full h-96 bg-chicago bg-cover rounded-xl">
-                    <p class="Card--rentas__titulo">Chicago</p>
-                    <p class="text-base pl-8 text-gray-800 mr-24 underline decoration-solid">2 habitaciones, 1 baño, cocina</p>
+            <div class="w-full h-full flex flex-col justify-center items-center">
+                <div class="w-full h-96 bg-chicago bg-cover rounded-xl lg:bg-center">
+                    <p class="Card--rentas__titulo lg:text-black">Chicago</p>
+                    <p class="text-base pl-8 text-gray-800 mr-24 underline decoration-solid lg:text-xl">2 habitaciones, 1 baño, cocina</p>
                 </div>
 
-                <div class="w-full h-96 bg-sydney bg-cover rounded-xl">
-                    <p class="Card--rentas__titulo">Sydney</p>
-                    <p class="text-base pl-8 text-gray-800 mr-24 underline decoration-solid ">2 habitaciones, 1 baño, cocina</p>
+                <div class="w-full lg:flex lg:h-full lg:space-x-6 mt-6">
+                    <div class="w-full h-96 bg-sydney bg-cover rounded-xl lg:h-auto">
+                        <p class="Card--rentas__titulo">Sydney</p>
+                        <p class="text-base pl-8 text-gray-800 mr-24 underline decoration-solid lg:text-xl">2 habitaciones, 1 baño, cocina</p>
+                    </div>
+    
+                    <div class="w-full space-y-6 mt-6 lg:mt-0">
+                        <div class="w-full h-96 bg-europe bg-cover rounded-xl">
+                            <p class="Card--rentas__titulo">Italia</p>
+                            <p class="text-base pl-8 text-gray-800 mr-24 underline decoration-solid lg:text-xl">2 habitaciones, 1 baño, cocina</p>
+                        </div>
+        
+                        <div class="w-full h-96 bg-iceland bg-cover rounded-xl">
+                            <p class="Card--rentas__titulo">Islandia</p>
+                            <p class="text-base pl-8 text-gray-800 mr-24 underline decoration-solid lg:text-xl">2 habitaciones, 1 baño, cocina</p>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="w-full h-96 bg-europe bg-cover rounded-xl">
-                    <p class="Card--rentas__titulo">Italia</p>
-                    <p class="text-base pl-8 text-gray-800 mr-24 underline decoration-solid">2 habitaciones, 1 baño, cocina</p>
-                </div>
-
-                <div class="w-full h-96 bg-iceland bg-cover rounded-xl">
-                    <p class="Card--rentas__titulo">Islandia</p>
-                    <p class="text-base pl-8 text-gray-800 mr-24 underline decoration-solid">2 habitaciones, 1 baño, cocina</p>
-                </div>
             </div>
         </div>
 
@@ -141,7 +162,7 @@
         </div>
     </section>
 
-    <footer class="w-full h-auto bg-gray-200 p-6 space-y-4 mb-16">
+    <footer class="w-full h-auto bg-gray-200 p-6 space-y-4 pb-16">
         <p class="text-lg">Acerca de</p>
         <p class="text-sm text-gray-500">Inversionistas</p>
         <p class="text-sm text-gray-500">Empleos</p>
