@@ -9,7 +9,7 @@
     @apply w-full h-3/5 bg-cover;
 }
 .Card--info {
-    @apply w-full h-2/5 bg-secondary;
+    @apply w-full h-2/5 bg-secondary dark:bg-gray-800;
 }
 .Card--info__title {
     @apply text-white font-bold text-xl px-4 py-2;
@@ -19,13 +19,13 @@
 }
 .Card:nth-child(even)
 .Card--info {
-    @apply bg-white;
+    @apply bg-white dark:bg-gray-600;
 }
 .Card:nth-child(even)
 .Card--info__title,
 .Card:nth-child(even)
 .Card--info__subtitle {
-    @apply text-tertiary;
+    @apply text-tertiary dark:text-white;
 }
 
 .Card--rentas__titulo {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,29 +10,31 @@
     <link rel="stylesheet" href="../public/css/tailwind.css">
     <title>Tailwind</title>
 </head>
-<body class="font-Montserrat">
+<body class="font-Montserrat dark:bg-gray-900">
     
-    <nav class="w-full h-14 hidden bg-white px-6 lg:flex items-center justify-between fixed z-50">
+    <nav class="w-full h-14 hidden bg-white px-6 lg:flex items-center justify-between fixed z-50 dark:bg-gray-800">
         <div class="h-auto w-auto">
-            <p class="text-xl text-primary">Platzi Travel</p>
+            <p class="text-xl text-primary dark:text-white">Platzi Travel</p>
         </div>
         <div class="flex space-x-8">
-            <a class="font-bold text-base text-primary" href="#home">Inicio</a>
-            <a class="font-bold text-base text-primary" href="#recomendados">Recomendados</a>
-            <a class="font-bold text-base text-primary" href="#rentas_destacadas">Rentas Destacadas</a>
-            <a class="font-bold text-base text-primary" href="#faqs">FAQs</a>
-            <a class="font-bold text-base text-primary" href="#footer">Sobre Nosotros</a>
+            <a class="font-bold text-base text-primary dark:text-white" href="#home">Inicio</a>
+            <a class="font-bold text-base text-primary dark:text-white" href="#recomendados">Recomendados</a>
+            <a class="font-bold text-base text-primary dark:text-white" href="#rentas_destacadas">Rentas Destacadas</a>
+            <a class="font-bold text-base text-primary dark:text-white" href="#faqs">FAQs</a>
+            <a class="font-bold text-base text-primary dark:text-white" href="#footer">Sobre Nosotros</a>
         </div>
         <div class="flex space-x-6">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-gray-600">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 dark:text-white text-gray-600">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
             </svg>
 
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-primary">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
-            </svg>
+            <button id="toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 dark:text-white text-primary">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+                </svg>
+            </button>
 
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-gray-600">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 dark:text-white text-gray-600">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
             </svg>
               
@@ -61,7 +63,7 @@
 
 
         <div class="p-6" id="recomendados">
-            <p class="text-3xl font-semibold text-primary">Recomendados</p>
+            <p class="text-3xl font-semibold text-primary dark:text-white">Recomendados</p>
             <div class="w-auto h-96 flex space-x-6 items-center overflow-x-auto overscroll-x-contain scrollbar-hide">
                 <div class="Card">
                     <div class="Card--cover bg-norway"></div>
@@ -124,7 +126,7 @@
         </div>
 
         <div class="px-6 h-auto w-full" id="rentas_destacadas">
-            <p class="text-3xl text-primary font-semibold pb-8">Rentas destacadas</p>
+            <p class="text-3xl text-primary font-semibold pb-8 dark:text-white">Rentas destacadas</p>
             <div class="w-full h-full flex flex-col justify-center items-center">
                 <div class="w-full h-96 bg-chicago bg-cover rounded-xl lg:bg-center">
                     <p class="Card--rentas__titulo lg:text-black">Chicago</p>
@@ -156,48 +158,48 @@
 
         <div class="w-full h-auto px-6 my-8" id="faqs">
             <div class="w-full h-full flex flex-col space-y-4">
-                <p class="text-3xl text-primary font-semibold mt-6">FAQS</p>
+                <p class="text-3xl text-primary font-semibold mt-6 dark:text-white">FAQS</p>
                 <div>
-                    <p class="text-xl font-medium text-primary">Politica de cancelacion</p>
-                    <p class="text-base pt-2">Para estancias menores a una semana es importante avisar con 3 días de
+                    <p class="text-xl font-medium text-primary dark:text-white">Politica de cancelacion</p>
+                    <p class="text-base pt-2 dark:text-gray-400">Para estancias menores a una semana es importante avisar con 3 días de
                         anticipación, de caso contario será sancionado.</p>
                 </div>
                 <div>
-                    <p class="text-xl font-medium text-primary">Metodos de pago</p>
-                    <p class="text-base pt-2">Aceptamos distintos métodos de pago: VISA, MasterCard, American Express,
+                    <p class="text-xl font-medium text-primary dark:text-white">Metodos de pago</p>
+                    <p class="text-base pt-2 dark:text-gray-400">Aceptamos distintos métodos de pago: VISA, MasterCard, American Express,
                         Paypal y Binance</p>
                 </div>
                 <div>
-                    <p class="text-xl font-medium text-primary">Politica de cancelacion</p>
-                    <p class="text-base pt-2">Para estancias menores a una semana es importante avisar con 3 días de
+                    <p class="text-xl font-medium text-primary dark:text-white">Politica de cancelacion</p>
+                    <p class="text-base pt-2 dark:text-gray-400">Para estancias menores a una semana es importante avisar con 3 días de
                         anticipación, de caso contario será sancionado.</p>
                 </div>
                 <div>
-                    <p class="text-xl font-medium text-primary">Mascotas</p>
-                    <p class="text-base pt-2">l tema de las mascotas dependerá directamente del anfitrión.</p>
+                    <p class="text-xl font-medium text-primary dark:text-white">Mascotas</p>
+                    <p class="text-base pt-2 dark:text-gray-400">l tema de las mascotas dependerá directamente del anfitrión.</p>
                 </div>
                 <div>
-                    <p class="text-xl font-medium text-primary">Informacion de seguridad</p>
-                    <p class="text-base pt-2">Todas nuestras estancias cuentan con seguro en caso de accidentes.</p>
+                    <p class="text-xl font-medium text-primary dark:text-white">Informacion de seguridad</p>
+                    <p class="text-base pt-2 dark:text-gray-400">Todas nuestras estancias cuentan con seguro en caso de accidentes.</p>
                 </div>
                 <div>
-                    <p class="text-xl font-medium text-primary">Largas estancias</p>
-                    <p class="text-base pt-2">Contamos con estancias de hasta 3 meses, en este caso es requerido un
+                    <p class="text-xl font-medium text-primary dark:text-white">Largas estancias</p>
+                    <p class="text-base pt-2 dark:text-gray-400">Contamos con estancias de hasta 3 meses, en este caso es requerido un
                         anticipo con un monto del 50% del valor de la renta.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer id="footer" class="w-full bg-gray-200 p-6 space-y-4 pb-16 mt-auto">
-        <p class="text-lg">Acerca de</p>
-        <p class="text-sm text-gray-500">Inversionistas</p>
-        <p class="text-sm text-gray-500">Empleos</p>
-        <p class="text-sm text-gray-500">Terminos y condiciones</p>
-        <p class="text-sm text-gray-500">Platzi Travel, Inc.</p>
+    <footer id="footer" class="w-full bg-gray-200 p-6 space-y-4 pb-20 mt-auto lg:pb-10 dark:bg-gray-600">
+        <p class="text-lg font-bold dark:text-white">Acerca de</p>
+        <p class="text-sm text-gray-500 dark:text-white">Inversionistas</p>
+        <p class="text-sm text-gray-500 dark:text-white">Empleos</p>
+        <p class="text-sm text-gray-500 dark:text-white">Terminos y condiciones</p>
+        <p class="text-sm text-gray-500 dark:text-white">Platzi Travel, Inc.</p>
     </footer>
 
-    <div id="tab_bar" class="w-full h-16 flex space-x-4 items-center justify-around bg-white fixed left-0 bottom-0 shadow-md lg:hidden">
+    <div id="tab_bar" class="w-full h-16 flex space-x-4 items-center justify-around bg-white fixed left-0 bottom-0 shadow-md lg:hidden dark:bg-gray-800">
         <a href="#home">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-400">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
@@ -213,7 +215,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
                 </svg>              
         </a>
-        <button>
+        <button id="toggle-sm">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-400">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
                 </svg>              
@@ -225,7 +227,7 @@
         </a>
     </div>
 
-
+    <script src="./js/main.js"></script>
 
 </body>
 </html>
