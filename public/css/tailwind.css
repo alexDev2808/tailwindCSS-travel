@@ -694,12 +694,20 @@ select {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
 
 .left-0 {
   left: 0px;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .my-8 {
@@ -721,6 +729,10 @@ select {
 
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mt-auto {
+  margin-top: auto;
 }
 
 .flex {
@@ -751,12 +763,36 @@ select {
   height: 100%;
 }
 
+.h-14 {
+  height: 3.5rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-3\/4 {
+  height: 75%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
 .max-h-96 {
   max-height: 24rem;
 }
 
 .max-h-screen {
   max-height: 100vh;
+}
+
+.min-h-full {
+  min-height: 100%;
+}
+
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .w-44 {
@@ -779,6 +815,14 @@ select {
   width: 24rem;
 }
 
+.w-8 {
+  width: 2rem;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -789,6 +833,10 @@ select {
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .justify-around {
@@ -829,6 +877,12 @@ select {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.space-x-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2rem * var(--tw-space-x-reverse));
+  margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .overflow-hidden {
@@ -1016,6 +1070,11 @@ select {
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
 .underline {
