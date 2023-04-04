@@ -15,19 +15,24 @@
     <nav></nav>
     <section class="w-full h-auto">
         <div class="mb-6" id="home">
-            <div class="w-full h-3/4">
-                <div class="w-full h-full flex flex-col absolute space-y-80 py-4 items-center">
-                    <input class="outline-none p-3 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12" placeholder="San Francisco" type="search">
-                    <button class="w-44 rounded-full text-xl text-primary font-semibold p-4 bg-white shadow-sm transition transition-all duration-500 ease-in-out hover:bg-primary hover:text-white hover:-translate-y-1 hover:scale-110">
+            <div class="w-full h-full relative">
+                <div class="w-full h-full flex flex-col absolute space-y-64 items-center lg:space-y-4 lg:items-start lg:px-28 lg:justify-center">
+                    <input class="outline-none p-3 mt-6 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12 lg:hidden" placeholder="San Francisco" type="search">
+                    <div class="hidden h-auto lg:w-2/5 lg:flex">
+                        <p class="text-4xl text-white font-bold">Encuentra mas ubicaciones como esta</p>
+                    </div>
+                    <button class="w-44 rounded-full text-xl text-primary font-semibold p-4 bg-white shadow-sm transition-all duration-500 ease-in-out hover:bg-primary hover:text-white hover:-translate-y-1 hover:scale-110">
                         Explora mas
                     </button>
                 </div>
-                <div class="w-full h-full">
-                    <img src="./img/sanFrancisco.jpg" alt="Puente San Francisco California">
+                <div class="w-full h-full lg:h-96 lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center">
+                    <img class="lg:hidden" src="./img/sanFrancisco.jpg" alt="Puente San Francisco California">
                 </div>
                 
             </div>
         </div>
+
+
         <div class="p-6" id="recomendados">
             <p class="text-3xl font-semibold text-primary">Recomendados</p>
             <div class="w-auto h-96 flex space-x-6 items-center overflow-x-auto overscroll-x-contain scrollbar-hide">
@@ -75,6 +80,7 @@
                 </div>
             </div>
         </div>
+
         <div class="px-6 h-auto w-full" id="rentas_destacadas">
             <p class="text-3xl text-primary font-semibold pb-8">Rentas destacadas</p>
             <div class="w-full h-full flex flex-col space-y-8 justify-center items-center">
@@ -143,7 +149,7 @@
         <p class="text-sm text-gray-500">Platzi Travel, Inc.</p>
     </footer>
 
-    <div class="w-full h-16 flex space-x-4 items-center justify-around bg-white fixed left-0 bottom-0 shadow-md" id="tab_bar">
+    <div id="tab_bar" class="w-full h-16 flex space-x-4 items-center justify-around bg-white fixed left-0 bottom-0 shadow-md lg:hidden">
         <a href="#home">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-400">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
